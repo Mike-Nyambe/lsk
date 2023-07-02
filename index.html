@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>The PDF</title>
+  </head>
+  <body>
+    <section>
+      <div class="Thee__pdf">
+        <div class="pdf__img">
+          <img src="logo.png" alt="lsk logo" />
+        </div>
+        <h1>The Might PDF of LSK</h1>
+        <button
+          onclick="openPDF('https://drive.google.com/file/d/1lN2PU9gimaIcHYLzKMd5QqUYyL4cujTv/view?usp=sharing')"
+        >
+          Open PDF
+        </button>
+        <p>Total Downloads: <span id="clickCount">0</span></p>
+        <script>
+          let clickCount = 0;
+
+          function openPDF(url) {
+            window.open(url, "_blank");
+            clickCount++;
+            document.getElementById("clickCount").textContent = clickCount;
+          }
+        </script>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

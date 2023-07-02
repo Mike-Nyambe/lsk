@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0000008d 100%, rgba(255, 255, 255, 0)),
+    url("/lsk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Thee__pdf {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  text-transform: capitalize;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: teal;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  transition: all 3ms ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover {
+  background-color: green;
+  color: black;
+}
+.pdf__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.pdf__img img {
+  width: 6rem;
+  height: 6rem;
+}
